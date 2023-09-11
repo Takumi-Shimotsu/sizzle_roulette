@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>シズルーレット-ガチャ設定</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="./static/images/roulette.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Cherry+Bomb+One&family=Kaisei+Opti:wght@500&family=M+PLUS+1p&family=Noto+Sans+JP:wght@300;400&family=Noto+Serif+JP:wght@200&family=Open+Sans:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+
+  <body>
+    <div id="index" class="big-bg">
+      <header class="page-header header-wrapper">
+        <h1>
+          <a href="index.html">
+            <img class="logo" src="./static/images/logo.png" alt="シズルーレット" />
+          </a>
+        </h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="">Menu</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="header-wrapper">
+        <h2 class="page-title">設定画面</h2>
+      </div>
+    </div>
+
+    <div class="home-contents wrapper">
+      <div class="budget-content">
+        <h2>予算</h2>
+        <div class="budget-buttons">
+          <button type="button" value="100" class="hundred">100円</button>
+          <button type="button" value="200" class="twohundred">200円</button>
+          <button type="button" value="300" class="threehundred">300円</button>
+          <button type="button" value="400" class="fourhundred">400円</button>
+          <button type="button" value="500" class="fivehundred">500円</button>
+        </div>
+      </div>
+
+      <div class="sizzle-content">
+        <h2>シズル</h2>
+        <div class="sizzle-category">
+          <div class="taste-category">
+            <h4 class="sub-title">味覚系</h4>
+            <div class="grid-buttons">
+              <button class="tasteButton" type="button" value="甘味">
+                甘味
+              </button>
+              <button class="tasteButton" type="button" value="塩気">
+                塩気
+              </button>
+              <button class="tasteButton" type="button" value="しょっぱい">
+                しょっぱい
+              </button>
+              <button class="tasteButton" type="button" value="風味">
+                風味
+              </button>
+              <button class="tasteButton" type="button" value="酸味">
+                酸味
+              </button>
+              <button class="tasteButton" type="button" value="いろんな味">
+                いろんな味
+              </button>
+            </div>
+          </div>
+
+          <div class="texture-category">
+            <h4 class="sub-title">食感系</h4>
+            <div class="grid-buttons">
+              <button class="textureButton" type="button" value="サクサク">
+                サクサク
+              </button>
+              <button class="textureButton" type="button" value="カリカリ">
+                カリカリ
+              </button>
+              <button class="textureButton" type="button" value="ふわふわ">
+                ふわふわ
+              </button>
+              <button class="textureButton" type="button" value="かみごたえ">
+                かみごたえ
+              </button>
+              <button class="textureButton" type="button" value="しっとり">
+                しっとり
+              </button>
+              <button class="textureButton" type="button" value="シュワシュワ">
+                シュワシュワ
+              </button>
+            </div>
+          </div>
+
+          <div class="information-category">
+            <h4 class="sub-title">情報系</h4>
+            <div class="grid-buttons">
+              <button class="informationButton" type="button" value="やみつき">
+                やみつき
+              </button>
+              <button
+                class="informationButton"
+                type="button"
+                value="みんなでシェア"
+              >
+                みんなでシェア
+              </button>
+              <button
+                class="informationButton"
+                type="button"
+                value="ロシアンルーレット"
+              >
+                ロシアンルーレット
+              </button>
+              <button class="informationButton" type="button" value="カラフル">
+                カラフル
+              </button>
+              <button class="informationButton" type="button" value="レトロ">
+                レトロ
+              </button>
+              <button
+                class="informationButton"
+                type="button"
+                value="泡が広がる"
+              >
+                泡が広がる
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-content">
+      <h2>ご注文内容</h2>
+      <p id="budget-text">〇〇</p>
+      <p>円の</p>
+      <p id="taste-text">＜味覚系＞</p>
+      <p id="texture-text">＜食感系＞</p>
+      <p id="information-text">＜情報系＞</p>
+      <p>な駄菓子</p>
+    </div>
+
+    <div class="start-reset-content">
+      <button type="button" id="start" disabled>スタート</button>
+      <button type="button" id="reset">リセット</button>
+    </div>
+
+    <script src="static/js/script.js"></script>
+  </body>
+</html>

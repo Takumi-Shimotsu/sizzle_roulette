@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>シズルーレット-ガチャ結果</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="./static/images/roulette.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Cherry+Bomb+One&family=Kaisei+Opti:wght@500&family=M+PLUS+1p&family=Noto+Sans+JP:wght@300;400&family=Noto+Serif+JP:wght@200&family=Open+Sans:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+
+  <body>
+    <div id="result" class="big-bg">
+      <header class="page-header header-wrapper">
+        <h1>
+          <a href="index.html">
+            <img class="logo" src="./static/images/logo.png" alt="シズルーレット" />
+          </a>
+        </h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="">Menu</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="header-wrapper">
+        <h2 class="page-title">ガチャ結果</h2>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-image">
+        <img src="./static/images/{{(index . 0).Id}}.png" alt="" />
+      </div>
+
+      <div class="gallery-content content-wrapper">
+        <h2 class="title">駄菓子一覧</h2>
+        <div class="gallery-thumbnails">
+          {{range .}}
+          <div class="item">
+            <h3 class="item-title">{{.Name}}</h3>
+            <img src="./static/images/{{.Id}}.png" alt="" />
+            <div class="item-content">
+              <div class="money">
+                <p class="key">・金額：</p>
+                <p class="value">¥{{.Price}}</p>
+              </div>
+              <div class="taste">
+                <p class="key">・味覚系：</p>
+                <p class="value">{{.Taste}}</p>
+              </div>
+              <div class="texture">
+                <p class="key">・食感系：</p>
+                <p class="value">{{.Texture}}</p>
+              </div>
+              <div class="information">
+                <p class="key">・情報系：</p>
+                <p class="value">{{.Information}}</p>
+              </div>
+            </div>
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+    <script src="static/js/script.js"></script>
+  </body>
+</html>
